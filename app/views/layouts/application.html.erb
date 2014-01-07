@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tictactoe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<!-- Begin page content -->
+		<div class="container">
+			<div class="page-header">
+				<h1>TicTacToe</h1>
+			</div>
+			<p class="lead">Inicia el juego!!.</p>
+			<p>Click en la cuadrícula para marcar la X</p>
+
+			<%= yield %>
+		</div>
+
+	</div>
+
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-muted">Desarrollado por Matías Hernández para Platanus</p>
+		</div>
+	</div>
+
+	<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js" %>
+	<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js" %>
+	<%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js" %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+</body>
+</html>
