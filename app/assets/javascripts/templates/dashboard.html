@@ -1,0 +1,34 @@
+<div class="tictactoe-wrap ng-scope">
+  <div class="cell" id="a1" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="a2" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="a3" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="b1" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="b2" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="b3" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="c1" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="c2" ng-click="user_mark($event)">
+
+  </div>
+  <div class="cell" id="c3" ng-click="user_mark($event)">
+
+  </div>
+</div>
+
+<h3 class="winner">
+{{winner}}
+</h3>
+<a class="btn btn-info btn-large ng-hide" ng-click="playAgain()" ng-show="gameOver">Quiero jugar nuevamente!!!</a>
