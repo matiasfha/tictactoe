@@ -41,12 +41,15 @@ class API::TictactoeController < ApplicationController
 		winner = ''
 
 		@columns.each do |column|
-			if times_in_column(column,@cpu) == 3
-				return @cpu
-			end
 			if  times_in_column(column,@user) == 3
-				return @user
+				winner = @user
+				break
 			end
+			if times_in_column(column,@cpu) == 3
+				winner = @cpu
+				break
+			end
+
 		end
 		return winner
 	end
